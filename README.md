@@ -3,8 +3,11 @@ XPrivacy
 
 The ultimate, yet easy to use, privacy manager for Android
 
+**You can use the successor [XPrivacyLua](https://forum.xda-developers.com/xposed/modules/xprivacylua6-0-android-privacy-manager-t3730663) on Android 6.0 Marshmallow and later.**
+
 <img src="http://www.xprivacy.eu/open-source-rookie-of-the-year-resized.png" width="315" height="333" alt="Open source Rookie of the year" />
-([publication](http://www.blackducksoftware.com/news/releases/black-duck-announces-open-source-rookies-year-winners))
+
+[Publication](http://www.blackducksoftware.com/news/releases/black-duck-announces-open-source-rookies-year-winners)
 
 Index
 -----
@@ -87,7 +90,7 @@ Features
 --------
 
 * Simple to use
-* No need to patch anything (no source, no [smali](https://code.google.com/p/smali/) or anything else)
+* No need to patch anything (no source, no [smali](https://github.com/JesusFreke/smali) or anything else)
 * For any stock variant of Android version 4.0.3 - 6.0.1 (ICS, Jelly Bean, KitKat, Lollipop, Marshmallow)
 * Newly installed applications are restricted by default
 * Displays data actually used by an application
@@ -364,6 +367,8 @@ See [here](http://forum.xda-developers.com/showpost.php?p=55810186&postcount=121
 and some other wireless cameras, like the Sony QX1/10/30/100 ([issue](https://github.com/M66B/XPrivacy/issues/1751)).
 
 * Candy Crush is known to crash on some ROMs, see [here](http://forum.xda-developers.com/showpost.php?p=58722199&postcount=13666).
+
+* Applications with overlay windows crash on MIUI 8, see for a solution ([here](https://github.com/M66B/XPrivacy/issues/2374)).
 
 Installation
 ------------
@@ -907,7 +912,7 @@ If these suggestions don't help, please create an issue and provide a logcat (se
 **(50) Do you have suggestions about additional privacy-related software?**
 
 IMHO, in addition to XPrivacy, you should at least install an ad blocker and a firewall:
-* [AdAway](http://sufficientlysecure.org/index.php/adaway/) ([source code](https://github.com/dschuermann/ad-away))
+* [AdAway](https://free-software-for-android.github.io/AdAway//) ([source code](https://github.com/Free-Software-for-Android/AdAway))
 * [AFWall+](https://play.google.com/store/apps/details?id=dev.ukanth.ufirewall) ([source code](https://github.com/ukanth/afwall))
 
 Here is a list of additional privacy-related software:
@@ -1154,7 +1159,7 @@ Nevertheless, the most sensitive data, like contacts and your location, can safe
 
 *XPrivacy 3 modes*
 
-* AOSP mode = vanilla (Google) Android KitKat or:
+* AOSP mode = vanilla (Google) Android KitKat or one of these KitKat based ROMs:
 	* [OmniROM](http://omnirom.org/)
 	* [CyanogenMod](http://www.cyanogenmod.org/) (based)
 	* [MIUI](http://en.miui.com/)
@@ -1167,7 +1172,7 @@ Nevertheless, the most sensitive data, like contacts and your location, can safe
 	* [Mahdi ROM](https://plus.google.com/u/0/communities/116540622179206449806)
 	* [Omega ROM](http://omegadroid.co/omega-roms/)
 * AOSP mode = vanilla (Google) Android Lollipop
-* Compatibility mode = all other Android versions/variants
+* Compatibility mode = all other earlier/later Android versions/variants
 
 *About* will show if XPrivacy 3 is running in compatibility mode, which means XPrivacy 3 is behaving as XPrivacy 2.
 If there is no message about compatibility mode, XPrivacy 3 is running in AOSP mode.
